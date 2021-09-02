@@ -1,6 +1,7 @@
 import { Nav, NavLink, NavMenu, NavButton } from '../styles/NavStyle';
 import { useLocation } from 'react-router-dom';
 import SvgComponent from '../svg/icon';
+import Heart from '../svg/heart';
 function NavBar() {
     const location = useLocation();
 
@@ -14,7 +15,7 @@ function NavBar() {
                 </NavLink>
 
                 <NavLink exact to="/Beneficios" >
-                    Benefícios
+                    <Heart color={location.pathname === "/Beneficios" ? "#650D99" : "#fff"} />
 
                 </NavLink>
 

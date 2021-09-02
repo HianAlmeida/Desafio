@@ -1,0 +1,75 @@
+.vibe-btn{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    font-weight: 500;
+}
+.vibe-btn p{
+    margin-left: 5px;
+}
+
+.vibe-heading{
+    background: #650D99;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    height: 150px;
+    margin-bottom: 40px;
+}
+
+.vibe-heading h1{
+    margin: 26px 0 5px 32px;
+    font-size: 20px;
+}
+.vibe-subtitle{
+    margin: 0 0 20px 32px;
+    font-size: 14px;
+}
+
+.vibe-heading img{
+    position: absolute;
+    top: 95px;
+    right: 0px;
+}
+
+.vibe-info{
+    width: 296px;
+    margin: auto;
+    margin-top: 15px;
+    background: white;
+    color: #650D99;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 45px;
+    padding-left: 10px;
+    
+    
+}
+
+.vibe-info div{
+    background: #EFE7F3;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+}
+
+.vibe-info h2{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.settings{ 
+    height: 44px;
+    width: 44px;
+    background: #650D99;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

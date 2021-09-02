@@ -4,26 +4,31 @@ import NavBar from './NavBar';
 function Home() {
     const data = [
         {
+            key: 1,
             title: "Cargo",
             description: "Consultor de RH",
             image: "./img/Grupo 62.png",
         },
         {
+            key: 2,
             title: "Bônus PPR",
             description: "2,4 salários por ano",
             image: "./img/726532.png",
         },
         {
+            key: 3,
             title: "Início",
             description: "12/05/2021",
             image: "./img/Caminho 399.png",
         },
         {
+            key: 4,
             title: "Localização",
             description: "Escritório VIVO São Paulo",
             image: "./img/Caminho 395.png",
         },
         {
+            key: 5,
             title: "Salário",
             description: "R$10.000,00",
             image: "./img/Caminho 394.png",
@@ -44,7 +49,7 @@ function Home() {
                 </div>
 
                 <div className="infos">
-                    {data.map((element) => (<Infos title={element.title} description={element.description} image={element.image} />))}
+                    {data.map((element) => (<Infos key={element.key} title={element.title} description={element.description} image={element.image} />))}
                 </div>
             </div>
             <NavBar />
