@@ -1,0 +1,45 @@
+.container{
+    padding-left: 32px;
+    color: #650D99;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    height: 92px;
+    
+}
+.header h1{
+    font-size: 25px;
+    font-weight: 900;   
+}
+.header img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.pessoa{
+    background-color: #EFE7F3;
+    height: 65px;
+    margin-left: -32px;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+   
+    
+}
+.pessoa h2{
+    margin-left: 18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.infos{
+    padding-top: 40px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+}
