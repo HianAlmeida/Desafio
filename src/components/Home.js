@@ -1,6 +1,6 @@
 import '../styles/Home.css';
 import Infos from './Infos';
-
+import NavBar from './NavBar';
 function Home() {
     const data = [
         {
@@ -31,20 +31,23 @@ function Home() {
     ]
 
     return (
-        <div className="container">
-            <div className="header">
-                <h1>Proposta</h1>
-                <img src="./img/Page-1.png" alt="" />
-            </div>
+        <div>
+            <div className="container">
+                <div className="header">
+                    <h1>Proposta</h1>
+                    <img src="./img/Page-1.png" alt="" />
+                </div>
 
-            <div className="pessoa">
-                <img src="./img/Retângulo 110.png" alt="" />
-                <h2>Bruna da Silva Santos</h2>
-            </div>
+                <div className="pessoa">
+                    <img src="./img/Retângulo 110.png" alt="" />
+                    <h2>Bruna da Silva Santos</h2>
+                </div>
 
-            <div className="infos">
-                {data.map((element) => (<Infos title={element.title} description={element.description} image={element.image} />))}
+                <div className="infos">
+                    {data.map((element) => (<Infos title={element.title} description={element.description} image={element.image} />))}
+                </div>
             </div>
+            <NavBar />
         </div>
     )
 }

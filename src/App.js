@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './components/Home';
 import Beneficios from './components/Beneficios';
-import NavBar from './components/NavBar';
+
+import Vibe from './components/Vibe';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/Beneficios" exact component={Beneficios} />
+          <Route path="/Beneficios/Vibe" exact component={Vibe} />
         </Switch>
-        <NavBar />
+
       </Router>
     </div>
   );
