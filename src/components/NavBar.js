@@ -2,6 +2,7 @@ import { Nav, NavLink, NavMenu, NavButton } from '../styles/NavStyle';
 import { useLocation } from 'react-router-dom';
 import SvgComponent from '../svg/icon';
 import Heart from '../svg/heart';
+import "../styles/Button.css";
 function NavBar() {
     const location = useLocation();
 
@@ -19,12 +20,20 @@ function NavBar() {
 
                 </NavLink>
 
-                {/* <NavButton exact to="/Proposta">
-                    P
-                </NavButton> */}
-
-
             </NavMenu>
+            <div className="circle">
+                <img src="./img/215654.png" alt="" />
+            </div>
+
+            {location.pathname === "/" ? <div>
+                <div class="balloon">
+                    <h1>Gostou da proposta?</h1>
+                    <p>Responda se aceita fazer<br />parte do nosso time.</p>
+                </div>
+                <div class="balloon-bottom">
+                </div>
+            </div> : ""}
+
 
         </Nav>
     )

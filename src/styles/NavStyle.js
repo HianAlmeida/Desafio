@@ -6,10 +6,11 @@ export const Nav = styled.nav`
     background: #650D99;
     height: 44px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%;
     position: absolute;
     bottom: 0;
+    
 `
 
 export const NavLink = styled(Link)`
@@ -29,18 +30,5 @@ export const NavLink = styled(Link)`
 export const NavMenu = styled.div`
    display: flex;
    align-items: center;
-
+   padding-left: 50px
 `
-// export const NavButton = styled(Link)`
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//    background: #EB3C7D;
-//    height: 85px;
-//    width: 85px;
-//    border-radius: 50%  50%  0% 50%;
-//    position: absolute;
-//    left: 285px;
-//    bottom: 0;
-
-// `

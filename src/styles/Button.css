@@ -1,0 +1,49 @@
+.circle{
+    background: #EB3C7D;
+    width: 130px;
+    height: 130px;
+    clip-path: circle(40%  at 70% 82%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.circle img{ 
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.balloon{
+    width: 162px;
+    height: 75px;
+    background: #EB3C7D;
+    border-radius: 5px;
+    position: absolute;
+    right: 24px;
+    bottom: 85px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 0 0 10px;
+  }
+  .balloon-bottom{
+    width: 20px;
+    height: 20px;
+    background: #EB3C7D;
+    border-radius: 5px;
+     transform: rotate(45deg); 
+    position: absolute;
+    right: 34px;
+    bottom: 78px;
+  }
+
+  .balloon h1{
+      font-size: 15px;
+      margin: 5px 0 5px 0px;
+  }
+  .balloon p{
+    font-size: 13px;
+    margin: 0;
+    font-weight: 200;
+}
+
+
