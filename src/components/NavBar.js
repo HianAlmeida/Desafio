@@ -30,11 +30,11 @@ function NavBar() {
                 </div>
 
                 {location.pathname === "/" ? <div>
-                    <div class="balloon">
+                    <div className="balloon">
                         <h1>Gostou da proposta?</h1>
                         <p>Responda se aceita fazer<br />parte do nosso time.</p>
                     </div>
-                    <div class="balloon-bottom">
+                    <div className="balloon-bottom">
                     </div>
                 </div> : ""}
             </Nav>

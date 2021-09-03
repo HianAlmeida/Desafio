@@ -4,7 +4,7 @@ import "../styles/NavPopup.css";
 
 function NavPopup(props) {
     return (props.trigger) ? (
-        <div className="nav-popup">
+        <div className="nav-popup btn-animation">
             <div className="nav-close">
                 <FaTimes onClick={() => props.setTrigger(false)} />
             </div>
