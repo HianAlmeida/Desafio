@@ -4,7 +4,7 @@ import "../styles/VibePopup.css";
 
 function VibePopup(props) {
     return (props.trigger) ? (
-        <div className="vibe-popup">
+        <div className="vibe-popup fadeIn">
             <div className="vibe-items">
                 <div className="vibe-info">
                     <div>

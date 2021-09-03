@@ -3,15 +3,17 @@ import { FaAngleRight } from "react-icons/fa"
 import NavBar from "./NavBar";
 import '../styles/Beneficios.css';
 
-
 function Beneficios() {
+
     return (
         <div>
             <div className="ben-heading">
                 <h1>Benefícios</h1>
                 <p>Vantagens que oferecemos</p>
             </div>
-            <Link className="ben-link" to="/Beneficios/Vibe">
+
+
+            <Link className="ben-link fadeInRight" to="/Beneficios/Vibe">
                 <div className="border"></div>
                 <div className="ben-img">
                     <img src="./img/Grupo 578.png" alt="" />
@@ -24,7 +26,9 @@ function Beneficios() {
 
                 <FaAngleRight className="arrow" />
             </Link>
-            <div className="ben-link">
+
+
+            <div className="ben-link fadeInRight">
                 <div className="border"></div>
                 <div className="ben-img">
                     <img src="./img/Grupo 580.png" alt="" />
@@ -37,7 +41,7 @@ function Beneficios() {
 
                 <FaAngleRight className="arrow" />
             </div>
-            <div className="ben-link">
+            <div className="ben-link fadeInRight">
                 <div className="border"></div>
                 <div className="ben-img">
                     <img src="./img/Grupo 592.png" alt="" />

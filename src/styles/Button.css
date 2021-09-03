@@ -25,6 +25,7 @@
     color: white;
     font-family: 'Roboto', sans-serif;
     padding: 5px 0 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(235, 60, 125, 0.6), 0 6px 20px 0 rgba(235, 60, 125, 0.19); 
   }
   .balloon-bottom{
     width: 20px;
@@ -35,6 +36,7 @@
     position: absolute;
     right: 34px;
     bottom: 78px;
+    
   }
 
   .balloon h1{

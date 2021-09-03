@@ -27,7 +27,7 @@
     border-radius: 10px;
     color: #650D99;
     font-family: 'Roboto', sans-serif;
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .border{
@@ -70,6 +70,22 @@
     margin-right: 10px;
 
 }
+
+@keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+ 
+ .fadeInRight {
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+ }
 
 
 

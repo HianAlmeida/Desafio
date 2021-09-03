@@ -28,7 +28,7 @@ function Vibe() {
 
             </div>
 
-            <div onClick={() => setButtonPopup(true)} className="vibe-info">
+            <div onClick={() => setButtonPopup(true)} className="vibe-info shadow">
                 <div>
                     <img src="../img/685352.png" alt="" />
                 </div>
@@ -37,7 +37,7 @@ function Vibe() {
                 <FaAngleRight className="arrow" />
             </div>
 
-            <div className="vibe-info">
+            <div className="vibe-info shadow">
                 <div>
                     <IconContext.Provider value={{ size: "1.4em" }}>
 
@@ -51,7 +51,7 @@ function Vibe() {
                 <FaAngleRight className="arrow" />
             </div>
 
-            <div className="vibe-info">
+            <div className="vibe-info shadow">
                 <div>
                     <img src="../img/2035128.png" alt="" />
                 </div>
