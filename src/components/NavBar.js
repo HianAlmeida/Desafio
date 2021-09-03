@@ -1,41 +1,45 @@
-import { Nav, NavLink, NavMenu, NavButton } from '../styles/NavStyle';
+import { Nav, NavLink, NavMenu } from '../styles/NavStyle';
 import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import SvgComponent from '../svg/icon';
 import Heart from '../svg/heart';
 import "../styles/Button.css";
+import NavPopup from './NavPopup';
 function NavBar() {
     const location = useLocation();
-
+    const [buttonPopup, setButtonPopup] = useState(false);
     return (
-        <Nav>
-            <NavMenu>
-                <NavLink exact to="/" >
+        <div>
+            <Nav>
+                <NavMenu>
+                    <NavLink exact to="/" >
 
-                    {/* <img src={location.pathname === "/" ? "./img/768049.png" : "./img/Grupo 20.png"} alt="" /> */}
-                    <SvgComponent color={location.pathname === "/" ? ".b{fill:#650D99}" : ".b{fill:#FFFFFF}"} />
-                </NavLink>
 
-                <NavLink exact to="/Beneficios" >
-                    <Heart color={location.pathname === "/Beneficios" ? "#650D99" : "#fff"} />
+                        <SvgComponent color={location.pathname === "/" ? ".b{fill:#650D99}" : ".b{fill:#FFFFFF}"} />
+                    </NavLink>
 
-                </NavLink>
+                    <NavLink exact to="/Beneficios" >
+                        <Heart color={location.pathname === "/Beneficios" ? "#650D99" : "#fff"} />
 
-            </NavMenu>
-            <div className="circle">
-                <img src="./img/215654.png" alt="" />
-            </div>
+                    </NavLink>
 
-            {location.pathname === "/" ? <div>
-                <div class="balloon">
-                    <h1>Gostou da proposta?</h1>
-                    <p>Responda se aceita fazer<br />parte do nosso time.</p>
+                </NavMenu>
+                <div onClick={() => setButtonPopup(true)} className="circle">
+                    <img src="./img/215654.png" alt="" />
+
                 </div>
-                <div class="balloon-bottom">
-                </div>
-            </div> : ""}
 
-
-        </Nav>
+                {location.pathname === "/" ? <div>
+                    <div class="balloon">
+                        <h1>Gostou da proposta?</h1>
+                        <p>Responda se aceita fazer<br />parte do nosso time.</p>
+                    </div>
+                    <div class="balloon-bottom">
+                    </div>
+                </div> : ""}
+            </Nav>
+            <NavPopup trigger={buttonPopup} setTrigger={setButtonPopup} />
+        </div>
     )
 };
 

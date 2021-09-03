@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa"
 import { AiOutlineSetting, AiOutlinePlus } from "react-icons/ai";
 import { IconContext } from "react-icons";
+import VibePopup from "./VibePopup";
+import { useState } from "react";
 import "../styles/Vibe.css";
 function Vibe() {
+    const [buttonPopup, setButtonPopup] = useState(false);
     return (
         <div>
             <div className="vibe-heading">
@@ -25,7 +28,7 @@ function Vibe() {
 
             </div>
 
-            <div className="vibe-info">
+            <div onClick={() => setButtonPopup(true)} className="vibe-info">
                 <div>
                     <img src="../img/685352.png" alt="" />
                 </div>
@@ -66,6 +69,9 @@ function Vibe() {
                 </IconContext.Provider>
 
             </div>
+
+            <VibePopup trigger={buttonPopup} setTrigger={setButtonPopup} />
+
 
         </div>
     )
